@@ -20,7 +20,7 @@ class Student:
       grade_sum += int(str(self.grades[gradeIndex]))
       grade_avg = grade_sum / grade_count
     return grade_avg
-#STRING REPRESENTATION | Student objects print 'name', 'year', 'grades'
+  #STRING REPRESENTATION | Student objects print 'name', 'year', 'grades'
   def __repr__(self):
     return "STUDENT: {name}, YEAR: {year}, GRADES: {grades}".format(name=self.name, year=self.year, grades=self.grades)
 
@@ -36,8 +36,6 @@ class Grade:
       return "PASS"
     else:
       return "FAIL"
-
-    
   #STRING REPRESENTATION | Grade objects print 'score' in a string
   def __repr__(self):
     return "{score}".format(score=self.score)
