@@ -1,4 +1,4 @@
-### CLASSES ###
+### DEFINE CLASSES ###
 # Student #
 class Student:
   #CONSTRUCTOR | Creates 'name', 'year', 'grades' variables
@@ -40,15 +40,15 @@ class Grade:
   def __repr__(self):
     return "{score}".format(score=self.score)
   
-### DATA INGESTION ###
-#Load Students
+### INSTANTIATE OBJECTS ###
+#Students
 roger = Student("Roger van der Weyden", 10)
 sandro = Student("Sandro Botticelli", 12)
 pieter = Student("Pieter Bruegel the Elder", 8)
 
 student_list = [roger, sandro, pieter]
 
-#Load Grades
+#Grades
 pieter.add_grade(Grade(100))
 pieter.add_grade(Grade(93))
 
@@ -58,7 +58,7 @@ roger.add_grade(Grade(0))
 sandro.add_grade(Grade(87))
 sandro.add_grade(Grade(76))
 
-### FUCNTIONS ###
+### DEFINE FUCNTIONS ###
 # Show Students #
 def ShowStudents(students):
   for student in students:
